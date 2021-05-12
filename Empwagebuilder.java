@@ -1,19 +1,20 @@
-public class Empwagebuilder{
-	public static void main(String[] args){
+public class Empwagebuilder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int IS_PRESENT = 1;
+	    int EMP_RATE_PER_HR = 20;
+double empCheck = Math.floor(Math.random() * 10) % 2;
 		
-	// Constants
-		int IS_FULL_TIME = 1;
-		//Compitation
-		double empCheck = Math.floor(Math.random() * 10) % 2;
-		
-		if (empCheck == IS_FULL_TIME){
-			System.out.println("Employee is present");
-                }
-		else{
-			System.out.println("Employee is absent");
-		
+		int empHrs;
+		if (empCheck == IS_PRESENT) {
+		empHrs=8;
 		}
+		else {
+		empHrs=0;
+		}
+      int salary = EMP_RATE_PER_HR*empHrs;
+      System.out.println("salary:"+salary);
 	}
 
 }
-	
