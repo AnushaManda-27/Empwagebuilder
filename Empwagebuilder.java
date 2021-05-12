@@ -6,7 +6,9 @@ public class Empwagebuilder {
 		int IS_PRESENT_FULL = 1;
 		int IS_PRESENT_HALF = 2;
 	    int EMP_RATE_PER_HR = 20;
-
+	    int MAX_WORKING_DAYS = 20;
+	    
+for(int counter = 1; counter<=MAX_WORKING_DAYS; counter++);{
   int empCheck = (int) Math.floor(Math.random() * 10) % 3;
 		
 		int empHrs;
@@ -25,3 +27,4 @@ public class Empwagebuilder {
       System.out.println("salary:"+salary);
 	}
 	}
+}
